@@ -1,0 +1,74 @@
+namespace = callalliesisvalid
+
+country_event = {
+    id = callalliesisvalid.1
+    title = callalliesisvalid.1.t
+    desc = callalliesisvalid.1.d
+    picture = LAND_MILITARY_eventPicture
+
+    trigger = {
+        tag = TUR
+        is_in_war = {
+            attackers = TUR
+        }
+        NOT = { has_country_flag = war }
+    }
+    immediate = {
+        set_country_flag = war
+    }
+    option = {
+        name = callalliesisvalid.1.a
+        every_subject_country = {
+            join_all_offensive_wars_of = TUR
+        }
+    }
+}
+
+country_event = {
+    id = callalliesisvalid.2
+    title = callalliesisvalid.2.t
+    desc = callalliesisvalid.2.d
+    picture = LAND_MILITARY_eventPicture
+
+    trigger = {
+        tag = TUR
+        NOT = { is_in_war = {
+            attackers = TUR
+        } }
+        has_country_flag = war
+    }
+ immediate = {
+    clr_country_flag = war
+ }
+    option = {
+        name = callalliesisvalid.2.a
+        country_event = { id = callalliesisvalid.3 }
+    }
+}
+
+
+country_event = {
+    id = callalliesisvalid.3
+    title = callalliesisvalid.3.t
+    desc = callalliesisvalid.3.d
+    picture = GFX_evt_parade
+
+    is_triggered_only = yes
+
+    trigger = {
+        tag = TUR
+        NOT = {
+             is_in_war = {
+            attackers = TUR
+        }
+        }
+        NOT = { has_country_flag = peace }
+    }
+    immediate = {
+        set_country_flag = peace
+    }
+
+    option = {
+        name = callalliesisvalid.3.a
+    }
+}
