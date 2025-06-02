@@ -2,6 +2,8 @@
 
 The provided code defines three country events within the `callalliesisvalid` namespace.
 
+- Steam Workshop: https://steamcommunity.com/sharedfiles/filedetails/?id=3492212054
+
 ## Event 1: `callalliesisvalid.1`
 
 ### Purpose
