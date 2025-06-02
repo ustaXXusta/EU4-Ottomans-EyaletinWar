@@ -1,0 +1,31 @@
+on_war = {
+    effect = {
+        if = {
+            limit = {
+                tag = TUR
+                is_in_war = {
+                    attackers = TUR
+                }
+                NOT = { has_country_flag = war }
+            }
+            country_event = { id = callalliesisvalid.1 }
+        }
+    }
+}
+
+on_peace = {
+    effect = {
+        if = {
+            limit = {
+                tag = TUR
+                NOT = {
+                    is_in_war = {
+                        attackers = TUR
+                    }
+                }
+                has_country_flag = war
+            }
+            country_event = { id = callalliesisvalid.2 }
+        }
+    }
+}
