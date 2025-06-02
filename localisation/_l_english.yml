@@ -1,0 +1,12 @@
+l_english:
+  callalliesisvalid.1.t: "Sultan's Call"
+  callalliesisvalid.1.d: "My Ghazis! The hour has come to muster our strength..."
+  callalliesisvalid.1.a: "May Allah be with us!"
+
+  callalliesisvalid.2.t: "Rest for the Ghazis"
+  callalliesisvalid.2.d: "Beys of the Osman! The dust of war has settled..."
+  callalliesisvalid.2.a: "It's just a break!"
+
+  callalliesisvalid.3.t: "Return to Peace"
+  callalliesisvalid.3.d: "The troops have returned to their homes."
+  callalliesisvalid.3.a: "Back to peace."
